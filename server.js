@@ -12,6 +12,14 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+app.get("/privacy-policy", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));
+});
+
+app.get("/support", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'support.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`Privacy policy server running on port ${PORT}`);
 });
